@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saman' Fitness</title>
+</head>
+<link rel="styleSheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<style>
+    body{
+        /* height: 1400px; */
+        font-family: 'Roboto', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        background: url('img/f.jpg');
+    }
+    .left{
+     position: absolute; 
+    left: 34px;
+    top: 20px;
+    /* border: 2px solid red; */
+     /* display: inline-block; */
+    }
+    .mid{
+     /* border: 2px solid green; */
+     /* below three conditions for  margin auto  */
+     display: block;
+     width: 50%;
+     margin: 20px auto;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+      display: inline-block;
+      
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+    .navbar li a{
+        /* visibility: hidden; it takes it hidden and display none skip it */
+        padding: 23px 18px;
+        color: blueviolet;
+        text-decoration: none;
+        
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+
+    }
+    .left img{
+        width: 53px;
+        /* text-align: center; */
+        margin: auto;
+        display: block;
+        clear:  both;
+    }
+    .left div{
+        line-height: 8px;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        clear: both;
+    }
+    .btn{
+        margin:  0px 9px;
+        padding: 3px 4px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+     background-color: rgb(83, 139, 139);
+    }
+    .formgroup input{
+        width: 53%;
+        text-align: center;
+        margin: 9px auto;
+        display: block;
+        border: 2px solid black;
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 23px;
+    }
+    .btn1{
+        /* by width display=block and margin=auto we can center  */
+        display: block;
+        width: 60px;
+        margin: auto;
+        padding: 4px 6px;
+
+    }
+    .container h1{
+       text-align: center;
+    }
+   
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+       <img src="img/logo.jpg" alt="">
+       <div>Saman' Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+               </ul>
+        </div>
+        <div class="right">
+       <button class="btn">Call us Now</button>
+       <button class="btn">Email us</button>
+        </div> </header>
+        <div class="container">
+            <h1>join the best Gym of Delhi Now</h1>
+            <form action="backend.php">
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your gender">
+                </div >
+                <div class="formgroup">      
+                    <input type="text" placeholder="Enter your age">
+                </div>
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your locality">
+                </div>
+                <button class="btn1">Submit</button>
+            </form>
+        </div>
+        
+</body>
+</html>
